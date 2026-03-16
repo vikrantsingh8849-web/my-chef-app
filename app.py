@@ -1,5 +1,7 @@
 import streamlit as st
 
+import streamlit as st
+from groq import Groq  # <--- THIS IS THE MISSING LINE!
 st.set_page_config(page_title="ChefAI", page_icon="👨‍🍳")
 # Custom CSS to set the background
 st.markdown(
