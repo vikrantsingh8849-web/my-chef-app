@@ -1,6 +1,26 @@
 import streamlit as st
-from groq import Groq
 
+st.set_page_config(page_title="ChefAI", page_icon="👨‍🍳")
+# Custom CSS to set the background
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                    url("https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=60");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    /* This makes your text boxes easier to read on a dark background */
+    .stTextInput, .stTextArea, .stMarkdown {
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 10px;
+        border-radius: 10px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 # 1. Page Configuration
 st.set_page_config(
     page_title="ChefAI - Master of the Kitchen",
